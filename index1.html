@@ -1,0 +1,16 @@
+# It will start at 0 and travel upto below value
+Number = int(input("Please Enter the Range : "))
+
+# Initializing First and Second Values 
+First = 0
+Second = 1
+           
+# Find & Displaying
+for Num in range(0, Number):
+    if(Num <= 1):
+        Next = Num
+    else:
+        Next = First + Second
+        First = Second
+        Second = Next
+    print(Next)
